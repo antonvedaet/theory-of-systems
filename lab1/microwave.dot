@@ -1,0 +1,78 @@
+digraph Microwave {
+	graph [bb="0,0,718,194.41",
+		color=black,
+		directed=true,
+		fillcolor=white,
+		label=Microwave,
+		lheight=0.21,
+		lp="359,11.5",
+		lwidth=1.10,
+		rankdir=LR,
+		"strict"=false,
+		style=solid
+	];
+	node [color=black,
+		fillcolor=white,
+		label="\N",
+		peripheries=1,
+		shape=rectangle,
+		style="rounded,filled"
+	];
+	edge [color=black];
+	waiting	[height=0.5,
+		label="waiting\l",
+		pos="35,92.412",
+		width=0.97222];
+	heating	[height=0.5,
+		label="heating\l",
+		pos="230.5,118.41",
+		width=0.98611];
+	waiting -> heating	[label=start_button,
+		lp="132.5,117.91",
+		pos="e,194.71,113.74 70.148,97.001 102.04,101.29 149.85,107.71 184.78,112.4"];
+	stopped	[color=red,
+		fillcolor=darksalmon,
+		height=0.61111,
+		label="stopped\l",
+		peripheries=2,
+		pos="677,111.41",
+		width=1.1389];
+	waiting -> stopped	[label=power_off,
+		lp="333,186.91",
+		pos="e,651.38,133.46 56.917,110.72 65.914,117.65 76.903,124.94 88,129.41 247.63,193.81 301.2,182.03 473,171.41 537.82,167.4 557.58,177.21 \
+618,153.41 626.75,149.97 635.39,144.89 643.23,139.45"];
+	finished	[height=0.5,
+		label="finished\l",
+		pos="436.5,57.412",
+		width=1.0139];
+	heating -> finished	[label=heating_done,
+		lp="333,100.91",
+		pos="e,400,64.94 266.08,100.69 271.97,98.032 278.1,95.493 284,93.412 303.29,86.615 352.68,75.28 389.87,67.144"];
+	fault	[height=0.5,
+		label="fault\l",
+		pos="436.5,111.41",
+		width=0.75];
+	heating -> fault	[label=heating_error,
+		lp="333,123.91",
+		pos="e,409.48,112.3 266.11,117.22 303.2,115.95 361.82,113.94 399.46,112.65"];
+	heating -> stopped	[label=power_off,
+		lp="436.5,159.91",
+		pos="e,635.79,126.07 266.17,131.18 272.05,132.9 278.15,134.41 284,135.41 430.33,160.46 472.1,157.84 618,130.41 620.64,129.92 623.33,129.33 \
+626.03,128.68"];
+	finished -> waiting	[label=reset,
+		lp="230.5,83.912",
+		pos="e,70.098,88.767 399.62,60.005 352.6,63.459 267.59,69.894 195,76.412 156.27,79.89 112.29,84.356 80.418,87.685"];
+	finished -> stopped	[label=power_off,
+		lp="554.5,99.912",
+		pos="e,635.94,97.57 473.07,62.959 509.69,68.983 568.26,79.496 618,92.412 620.74,93.124 623.54,93.894 626.36,94.702"];
+	fault -> stopped	[label="repair | power_off",
+		lp="554.5,118.91",
+		pos="e,635.96,111.41 463.93,111.41 502.89,111.41 576.41,111.41 625.81,111.41"];
+	stopped -> waiting	[label=power_on,
+		lp="333,35.912",
+		pos="e,70.114,78.913 654.96,89.309 644.67,79.704 631.59,69.133 618,62.412 558.85,33.152 538.61,37.565 473,30.412 301.84,11.75 254.56,\
+29.803 88,73.412 85.254,74.131 82.45,74.937 79.637,75.8"];
+	stopped -> stopped	[label=power_off,
+		lp="677,158.91",
+		pos="e,699.6,133.62 654.4,133.62 652.55,143.21 660.08,151.41 677,151.41 687.57,151.41 694.48,148.21 697.72,143.46"];
+}

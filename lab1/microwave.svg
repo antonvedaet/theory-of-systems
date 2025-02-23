@@ -1,0 +1,108 @@
+<svg width="663pt" height="211pt" viewBox="0.00 0.00 663.06 210.68" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 206.68)">
+<title>Microwave</title>
+<polygon fill="white" stroke="none" points="-4,4 -4,-206.68 659.06,-206.68 659.06,4 -4,4"/>
+<text text-anchor="middle" x="327.53" y="-8.2" font-family="Times,serif" font-size="14.00">Microwave</text>
+<!-- waiting -->
+<g id="node1" class="node">
+<title>waiting</title>
+<path fill="white" stroke="black" d="M58,-78.41C58,-78.41 12,-78.41 12,-78.41 6,-78.41 0,-72.41 0,-66.41 0,-66.41 0,-54.41 0,-54.41 0,-48.41 6,-42.41 12,-42.41 12,-42.41 58,-42.41 58,-42.41 64,-42.41 70,-48.41 70,-54.41 70,-54.41 70,-66.41 70,-66.41 70,-72.41 64,-78.41 58,-78.41"/>
+<text text-anchor="start" x="8" y="-56.21" font-family="Times,serif" font-size="14.00">waiting</text>
+</g>
+<!-- heating -->
+<g id="node2" class="node">
+<title>heating</title>
+<path fill="white" stroke="black" d="M231.88,-164.41C231.88,-164.41 184.88,-164.41 184.88,-164.41 178.88,-164.41 172.88,-158.41 172.88,-152.41 172.88,-152.41 172.88,-140.41 172.88,-140.41 172.88,-134.41 178.88,-128.41 184.88,-128.41 184.88,-128.41 231.88,-128.41 231.88,-128.41 237.88,-128.41 243.88,-134.41 243.88,-140.41 243.88,-140.41 243.88,-152.41 243.88,-152.41 243.88,-158.41 237.88,-164.41 231.88,-164.41"/>
+<text text-anchor="start" x="180.88" y="-142.21" font-family="Times,serif" font-size="14.00">heating</text>
+</g>
+<!-- waiting&#45;&gt;heating -->
+<g id="edge1" class="edge">
+<title>waiting-&gt;heating</title>
+<path fill="none" stroke="black" d="M59.33,-78.73C68.04,-85.1 78.2,-92 88,-97.41 111.44,-110.33 138.99,-121.86 161.72,-130.49"/>
+<polygon fill="black" stroke="black" points="160.44,-133.74 171.04,-133.95 162.89,-127.18 160.44,-133.74"/>
+<text text-anchor="middle" x="121.44" y="-132.02" font-family="Times,serif" font-size="14.00">start_button</text>
+</g>
+<!-- stopped -->
+<g id="node3" class="node">
+<title>stopped</title>
+<path fill="darksalmon" stroke="red" d="M639.06,-105.41C639.06,-105.41 581.06,-105.41 581.06,-105.41 575.06,-105.41 569.06,-99.41 569.06,-93.41 569.06,-93.41 569.06,-73.41 569.06,-73.41 569.06,-67.41 575.06,-61.41 581.06,-61.41 581.06,-61.41 639.06,-61.41 639.06,-61.41 645.06,-61.41 651.06,-67.41 651.06,-73.41 651.06,-73.41 651.06,-93.41 651.06,-93.41 651.06,-99.41 645.06,-105.41 639.06,-105.41"/>
+<path fill="none" stroke="red" d="M643.06,-109.41C643.06,-109.41 577.06,-109.41 577.06,-109.41 571.06,-109.41 565.06,-103.41 565.06,-97.41 565.06,-97.41 565.06,-69.41 565.06,-69.41 565.06,-63.41 571.06,-57.41 577.06,-57.41 577.06,-57.41 643.06,-57.41 643.06,-57.41 649.06,-57.41 655.06,-63.41 655.06,-69.41 655.06,-69.41 655.06,-97.41 655.06,-97.41 655.06,-103.41 649.06,-109.41 643.06,-109.41"/>
+<text text-anchor="start" x="577.06" y="-79.21" font-family="Times,serif" font-size="14.00">stopped</text>
+</g>
+<!-- waiting&#45;&gt;stopped -->
+<g id="edge2" class="edge">
+<title>waiting-&gt;stopped</title>
+<path fill="none" stroke="black" d="M70.45,-57.88C138.83,-53.35 296.46,-45.3 428.3,-56.41 470.53,-59.96 517.89,-67.16 553.54,-73.22"/>
+<polygon fill="black" stroke="black" points="552.74,-76.64 563.19,-74.89 553.93,-69.74 552.74,-76.64"/>
+<text text-anchor="middle" x="299.59" y="-55.67" font-family="Times,serif" font-size="14.00">power_off</text>
+</g>
+<!-- heating&#45;&gt;stopped -->
+<g id="edge5" class="edge">
+<title>heating-&gt;stopped</title>
+<path fill="none" stroke="black" d="M244.27,-160.14C250.07,-161.91 256.08,-163.44 261.88,-164.41 387.1,-185.28 433.96,-206.06 547.06,-148.41 561.01,-141.29 573.55,-129.76 583.65,-118.37"/>
+<polygon fill="black" stroke="black" points="586.15,-120.83 589.9,-110.92 580.79,-116.33 586.15,-120.83"/>
+<text text-anchor="middle" x="391.8" y="-190.08" font-family="Times,serif" font-size="14.00">power_off</text>
+</g>
+<!-- finished -->
+<g id="node4" class="node">
+<title>finished</title>
+<path fill="white" stroke="black" d="M416.3,-101.41C416.3,-101.41 367.3,-101.41 367.3,-101.41 361.3,-101.41 355.3,-95.41 355.3,-89.41 355.3,-89.41 355.3,-77.41 355.3,-77.41 355.3,-71.41 361.3,-65.41 367.3,-65.41 367.3,-65.41 416.3,-65.41 416.3,-65.41 422.3,-65.41 428.3,-71.41 428.3,-77.41 428.3,-77.41 428.3,-89.41 428.3,-89.41 428.3,-95.41 422.3,-101.41 416.3,-101.41"/>
+<text text-anchor="start" x="363.3" y="-79.21" font-family="Times,serif" font-size="14.00">finished</text>
+</g>
+<!-- heating&#45;&gt;finished -->
+<g id="edge3" class="edge">
+<title>heating-&gt;finished</title>
+<path fill="none" stroke="black" d="M243.1,-127.96C249.25,-124.95 255.69,-122.03 261.88,-119.61 288.45,-109.21 319.17,-100.47 343.95,-94.18"/>
+<polygon fill="black" stroke="black" points="344.56,-97.63 353.42,-91.83 342.87,-90.84 344.56,-97.63"/>
+<text text-anchor="middle" x="299.59" y="-123.81" font-family="Times,serif" font-size="14.00">heating_done</text>
+</g>
+<!-- fault -->
+<g id="node5" class="node">
+<title>fault</title>
+<path fill="white" stroke="black" d="M406.8,-155.41C406.8,-155.41 376.8,-155.41 376.8,-155.41 370.8,-155.41 364.8,-149.41 364.8,-143.41 364.8,-143.41 364.8,-131.41 364.8,-131.41 364.8,-125.41 370.8,-119.41 376.8,-119.41 376.8,-119.41 406.8,-119.41 406.8,-119.41 412.8,-119.41 418.8,-125.41 418.8,-131.41 418.8,-131.41 418.8,-143.41 418.8,-143.41 418.8,-149.41 412.8,-155.41 406.8,-155.41"/>
+<text text-anchor="start" x="372.8" y="-133.21" font-family="Times,serif" font-size="14.00">fault</text>
+</g>
+<!-- heating&#45;&gt;fault -->
+<g id="edge4" class="edge">
+<title>heating-&gt;fault</title>
+<path fill="none" stroke="black" d="M244.36,-144.67C275.63,-143.12 321.33,-140.85 353.34,-139.26"/>
+<polygon fill="black" stroke="black" points="353.13,-142.78 362.95,-138.79 352.79,-135.79 353.13,-142.78"/>
+<text text-anchor="middle" x="299.59" y="-147.95" font-family="Times,serif" font-size="14.00">heating_error</text>
+</g>
+<!-- stopped&#45;&gt;waiting -->
+<g id="edge9" class="edge">
+<title>stopped-&gt;waiting</title>
+<path fill="none" stroke="black" d="M564.67,-60.6C558.85,-58.22 552.89,-56.07 547.06,-54.41 424.71,-19.54 388.9,-22.4 261.88,-29.61 184.23,-34.01 164.78,-36.94 88,-49.41 85.85,-49.76 83.65,-50.13 81.43,-50.53"/>
+<polygon fill="black" stroke="black" points="80.97,-47.06 71.8,-52.38 82.28,-53.93 80.97,-47.06"/>
+<text text-anchor="middle" x="299.59" y="-33.81" font-family="Times,serif" font-size="14.00">power_on</text>
+</g>
+<!-- stopped&#45;&gt;stopped -->
+<g id="edge10" class="edge">
+<title>stopped-&gt;stopped</title>
+<path fill="none" stroke="black" d="M588.85,-109.61C588.15,-119.37 595.22,-127.41 610.06,-127.41 618.64,-127.41 624.62,-124.72 628,-120.57"/>
+<polygon fill="black" stroke="black" points="631.34,-121.64 630.84,-111.06 624.63,-119.64 631.34,-121.64"/>
+<text text-anchor="middle" x="610.06" y="-131.61" font-family="Times,serif" font-size="14.00">power_off</text>
+</g>
+<!-- finished&#45;&gt;waiting -->
+<g id="edge6" class="edge">
+<title>finished-&gt;waiting</title>
+<path fill="none" stroke="black" d="M354.86,-81.08C289.91,-76.87 153.1,-68 81.64,-63.36"/>
+<polygon fill="black" stroke="black" points="82.06,-59.88 71.85,-62.73 81.61,-66.87 82.06,-59.88"/>
+<text text-anchor="middle" x="208.38" y="-78.01" font-family="Times,serif" font-size="14.00">reset</text>
+</g>
+<!-- finished&#45;&gt;stopped -->
+<g id="edge7" class="edge">
+<title>finished-&gt;stopped</title>
+<path fill="none" stroke="black" d="M428.51,-83.41C462.47,-83.41 514.06,-83.41 553.41,-83.41"/>
+<polygon fill="black" stroke="black" points="553.17,-86.91 563.17,-83.41 553.17,-79.91 553.17,-86.91"/>
+<text text-anchor="middle" x="496.68" y="-87.61" font-family="Times,serif" font-size="14.00">power_off</text>
+</g>
+<!-- fault&#45;&gt;stopped -->
+<g id="edge8" class="edge">
+<title>fault-&gt;stopped</title>
+<path fill="none" stroke="black" d="M419.23,-132.72C450.13,-127.01 502.7,-116.62 547.06,-104.41 549.33,-103.78 551.63,-103.12 553.96,-102.43"/>
+<polygon fill="black" stroke="black" points="554.92,-105.8 563.44,-99.51 552.85,-99.11 554.92,-105.8"/>
+<text text-anchor="middle" x="496.68" y="-131.36" font-family="Times,serif" font-size="14.00">repair | power_off</text>
+</g>
+</g>
+</svg>
